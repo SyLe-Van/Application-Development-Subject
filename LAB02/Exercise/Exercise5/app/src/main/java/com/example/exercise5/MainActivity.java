@@ -24,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intentWeb);
 
                 // Make a phone call
-                Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:123456789"));
-                startActivity(intentCall);
+//                Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:123456789"));
+//                startActivity(intentCall);
 
                 // Send an SMS
 //                Intent intentSms = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:123456789"));
-//                intentSms.putExtra("sms_body", "Làm Lab a Khiêm chưa m.");
+//                intentSms.putExtra("sms_body", "Nguyen Nhat Thuong.");
 //                startActivity(intentSms);
 
                 // Open Google Maps for directions
-//                String mapUri = "http://maps.google.com/maps?daddr=latitude,longitude";
-//                Intent intentMap = new Intent(Intent.ACTION_VIEW, Uri.parse(mapUri));
-//                startActivity(intentMap);
+                String mapUri = "http://maps.google.com/maps?daddr=latitude,longitude";
+                Intent intentMap = new Intent(Intent.ACTION_VIEW, Uri.parse(mapUri));
+                startActivity(intentMap);
             }
         });
     }
