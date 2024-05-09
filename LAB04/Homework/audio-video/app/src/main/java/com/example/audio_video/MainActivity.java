@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playVideo() {
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.one_piece; // Path to your video file
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.one_piece;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
